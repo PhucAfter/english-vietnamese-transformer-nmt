@@ -1,4 +1,4 @@
-# English → Vietnamese Neural Machine Translation 🇬🇧➡🇻🇳
+# A Transformer - Based Neural Machine Translation System for English – Vietnamese
 
 ![Web Demo](assets/web_ui.png)
 
