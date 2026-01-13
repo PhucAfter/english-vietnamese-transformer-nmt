@@ -132,10 +132,6 @@ Output files:
 - `vocab.pkl`
 - `transformer.pth`
 
-Training process:
-
-![Training](assets/training.png)
-
 ---
 
 ## 💬 Console Translation
@@ -155,7 +151,7 @@ Example:
 ### ▶ Run Web Server
 
 ```bash
-uvicorn web_app:app --reload
+uvicorn web_app:app --reload --host 0.0.0.0 --port 8000
 ```
 
 Server running:
@@ -189,7 +185,6 @@ Web interface:
 ## 🚨 Notes
 
 - Beam Search provides better translation quality but is slower.
-- Model weights are **not included** in this repository due to size constraints.
 - You can train your own model using `train.py`.
 
 ---
