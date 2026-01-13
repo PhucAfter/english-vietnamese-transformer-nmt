@@ -1,4 +1,4 @@
-# A Transformer - Based Neural Machine Translation System for English – Vietnamese
+# A Transformer-Based Neural Machine Translation System for English-Vietnamese
 
 ![Web Demo](assets/web_ui.png)
 
