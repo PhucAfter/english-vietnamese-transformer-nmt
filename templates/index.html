@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EN → VI Translator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">T</div>
+        <div>
+          <h1>English → Vietnamese</h1>
+          <p>Dịch nhanh bằng mô hình Transformer</p>
+        </div>
+      </div>
+      <div class="meta" id="meta"></div>
+    </header>
+
+    <section class="card">
+      <div class="grid">
+        <div class="panel">
+          <div class="label">English</div>
+          <textarea id="src" placeholder="Nhập tiếng Anh ở đây..."></textarea>
+          <div class="row">
+            <button class="btn primary" id="btnTranslate">Dịch</button>
+            <button class="btn" id="btnClear">Xoá</button>
+            <div class="hint" id="hint"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="label">Vietnamese</div>
+          <textarea id="tgt" placeholder="Kết quả sẽ hiện ở đây..." readonly></textarea>
+          <div class="row">
+            <button class="btn" id="btnCopy">Copy</button>
+            <div class="status" id="status"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="history-head">
+          <h2>Lịch sử</h2>
+          <button class="btn small" id="btnClearHistory">Xoá lịch sử</button>
+        </div>
+        <div id="historyList" class="history-list"></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>Tip: Ctrl + Enter để dịch nhanh</span>
+    </footer>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
